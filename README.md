@@ -1,7 +1,19 @@
-Backend application, written in NodeJs, using MongoDB.
+# GammaTest
 
-# Foobar
-
-Foobar is a Python library for dealing with word pluralization.
+GammaTest is a test app, written in NodeJs, using MongoDB Atlas.
 
 ## Installation
+
+1. Clone the repo: git clone https://github.com/alexfrenkel92/gammaTestBackend.git
+
+2. Use npm to install the projetc's dependencies: npm install
+
+3. To use the full app locally, you have to connect the clonned app to your MongoDB database, either with MongoDB Compass or MongoDB Atlas.
+
+4. In the database.js file, change the const url to your given value, received from MongoDB:
+
+const userName = process.env.DB_USER;
+const password = process.env.DB_PASS;
+const url = `mongodb+srv://${userName}:${password}@cluster0.psqbu.mongodb.net/gammatest?retryWrites=true&w=majority`;
+
+![alt text](https://onedrive.live.com/?cid=EA0D723BB730366A&id=EA0D723BB730366A%21824924&parId=root&o=OneUp)
