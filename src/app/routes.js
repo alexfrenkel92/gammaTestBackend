@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 
-const products = require('./controller/productsController')
+const products = require('./controller/productsController');
 
 app.use(cors());
 app.use(express.json());

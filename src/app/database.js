@@ -1,52 +1,52 @@
-const { MongoClient, ObjectId } = require('mongodb');
+const path = require('path');
+require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
+const { MongoClient } = require('mongodb');
 
-const userName = 'gamma-test';
-const password = 'gamma-test-01';
+const userName = process.env.DB_USER;
+const password = process.env.DB_PASS;
 const url = `mongodb+srv://${userName}:${password}@cluster0.psqbu.mongodb.net/gammatest?retryWrites=true&w=majority`;
 const dbName = 'gammatest';
 
 let db;
 
 const connectToMongoDb = () =>
-    MongoClient.connect(url, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true
-    })
+  MongoClient.connect(url, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+  })
     .then((client) => {
-        db = client.db(dbName)
-    })
+      db = client.db(dbName);
+    });
 
 const getProducts = (productId) => {
-    const collection = db.collection('products')
-    if (productId) {
-        collection.countDocuments({ _id: Number(productId) }, (_, count) => {
-            if (count === 0) {
-                console.log('getProducts: Id does not exist');
-                return
-            }
-        })
-        return collection.find({ _id: Number(productId) }).toArray()
-    } else if (!productId) {
-        return collection.find({}).toArray();
-    }
-}
+  const collection = db.collection('products');
+  if (productId) {
+    collection.countDocuments({ _id: Number(productId) }, (_, count) => {
+      if (count === 0) {
+        console.log('getProducts: Id does not exist');
+      }
+    });
+    return collection.find({ _id: Number(productId) }).toArray();
+  } else if (!productId) {
+    return collection.find({}).toArray();
+  }
+};
 
 const insertProduct = (productId, productName, productPrice) => {
-    const collection = db.collection('products');
-    return collection.insertOne({ _id: productId, productName: productName, productPrice: productPrice })
-}
+  const collection = db.collection('products');
+  return collection.insertOne({ _id: productId, productName: productName, productPrice: productPrice });
+};
 
 const deleteProduct = (productId) => {
-    const collection = db.collection('products');
-    if (productId) {
-        collection.countDocuments({ _id: Number(productId) }, (_, count) => {
-            if (count === 0) {
-                console.log('deleteProduct: Id does not exist');
-                return;
-            }
-        })
-        return collection.findOneAndDelete({ "_id": Number(productId) })
-    }
-}
+  const collection = db.collection('products');
+  if (productId) {
+    collection.countDocuments({ _id: Number(productId) }, (_, count) => {
+      if (count === 0) {
+        console.log('deleteProduct: Id does not exist');
+      }
+    });
+    return collection.findOneAndDelete({ _id: Number(productId) });
+  }
+};
 
-module.exports = { connectToMongoDb, insertProduct, getProducts, deleteProduct }
+module.exports = { connectToMongoDb, insertProduct, getProducts, deleteProduct };
