@@ -16,4 +16,4 @@ const userName = process.env.DB_USER;
 const password = process.env.DB_PASS;
 const url = `mongodb+srv://${userName}:${password}@cluster0.psqbu.mongodb.net/gammatest?retryWrites=true&w=majority`;
 
-![alt text](https://onedrive.live.com/?cid=EA0D723BB730366A&id=EA0D723BB730366A%21824924&parId=root&o=OneUp)
+![alt text](https://ibb.co/tPtffFt)
