@@ -24,3 +24,10 @@ npm install
 ```sh
 npm run
 ```
+
+## Installation
+
+For a detailed API documentation, visit the link below:
+```sh
+https://app.swaggerhub.com/apis-docs/alexfrenkel92/GammaTestApp/1.0.0#/
+```
