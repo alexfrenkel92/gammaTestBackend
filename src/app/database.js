@@ -2,8 +2,10 @@ const path = require('path');
 require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
 const { MongoClient } = require('mongodb');
 
-const userName = process.env.DB_USER;
-const password = process.env.DB_PASS;
+// const userName = process.env.DB_USER;
+// const password = process.env.DB_PASS;
+const userName = 'gamma-test';
+const password = 'gamma-test-01';
 const url = `mongodb+srv://${userName}:${password}@cluster0.psqbu.mongodb.net/gammatest?retryWrites=true&w=majority`;
 const dbName = 'gammatest';
 
