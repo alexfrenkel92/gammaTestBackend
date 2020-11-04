@@ -18,8 +18,6 @@
     "mongodb": "^3.6.2",
     "mongoose": "^5.10.11",
     "nodemon": "^2.0.6",
-    "semistandard": "^16.0.0",
-    "swagger-client": "^3.12.0",
-    "swagger-ui-express": "^4.1.4"
+    "semistandard": "^16.0.0"
   }
 }
