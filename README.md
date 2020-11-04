@@ -20,7 +20,7 @@ npm install
 
 3. To use the full app locally, you have to connect the clonned app to your MongoDB database, either with MongoDB Compass or MongoDB Atlas.
 
-4. In the database.js file, change the **const url** to your given value, received from MongoDB:
+4. In the database.js file, change the ```sh const url``` to your given value, received from MongoDB:
 
 ![alt text](/readmeImg/mongoDBconnect1.png)
 
