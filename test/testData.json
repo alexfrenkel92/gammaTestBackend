@@ -1,0 +1,32 @@
+[
+    {
+        "productId": 1,
+        "productName": "product1",
+        "productPrice": 270
+    },
+    {
+        "productId": 2,
+        "productName": "product2",
+        "productPrice": 150
+    },
+    {
+        "productId": 3,
+        "productName": "product3",
+        "productPrice": 250
+    },
+    {
+        "productId": 4,
+        "productName": "product4",
+        "productPrice": 110
+    },
+    {
+        "productId": 5,
+        "productName": "product5",
+        "productPrice": 430
+    },
+    {
+        "productId": 6,
+        "productName": "product6",
+        "productPrice": 870
+    }
+]

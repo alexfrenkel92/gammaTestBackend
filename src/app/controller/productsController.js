@@ -35,7 +35,7 @@ router.post('/', (req, res) => {
   }
   insertProduct(productId, productName, productPrice)
     .then((result) => {
-      res.status(200);
+      res.status(201);
       res.json(result.ops).end(); // result.ops returns the inserted object
     })
     .catch((error) => {
