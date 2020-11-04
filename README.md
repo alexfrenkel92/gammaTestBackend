@@ -29,5 +29,5 @@ npm run
 
 For a detailed API documentation, visit the link below:
 ```sh
-https://app.swaggerhub.com/apis-docs/alexfrenkel92/GammaTestApp/1.0.0#/
+[I'm an inline-style link](https://app.swaggerhub.com/apis-docs/alexfrenkel92/GammaTestApp/1.0.0#/)
 ```
