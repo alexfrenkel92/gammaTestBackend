@@ -6,6 +6,10 @@ The app is deployed on heroku:
 
 https://gamma-test-backend.herokuapp.com/
 
+Unfinished frontend:
+
+https://gamma-test-frontend.herokuapp.com/
+
 ## Install Localy
 
 1. Clone the repo: 
