@@ -2,6 +2,10 @@
 
 GammaTest is a test app, written in NodeJs, using MongoDB Atlas.
 
+The app is deployed on heroku:
+
+https://gamma-test-backend.herokuapp.com/
+
 ## Installation
 
 1. Clone the repo: 
