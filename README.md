@@ -28,4 +28,5 @@ npm run
 ## API Endpoints
 
 For a detailed API documentation, visit the link below:
+
 https://app.swaggerhub.com/apis-docs/alexfrenkel92/GammaTestApp/1.0.0#/
