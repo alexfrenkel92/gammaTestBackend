@@ -6,7 +6,7 @@ The app is deployed on heroku:
 
 https://gamma-test-backend.herokuapp.com/
 
-## Installation
+## Install Localy
 
 1. Clone the repo: 
 ```sh
