@@ -40,7 +40,7 @@ router.post('/', (req, res) => {
     })
     .catch((error) => {
       console.log('Controller error: ' + error);
-      res.status(400).json({ Error: 'ID already declared' }).end();
+      res.status(409).json({ Error: 'ID already declared' }).end();
     });
 });
 
