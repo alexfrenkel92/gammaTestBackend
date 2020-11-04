@@ -25,9 +25,7 @@ npm install
 npm run
 ```
 
-## Installation
+## API Endpoints
 
 For a detailed API documentation, visit the link below:
-```sh
-[I'm an inline-style link](https://app.swaggerhub.com/apis-docs/alexfrenkel92/GammaTestApp/1.0.0#/)
-```
+https://app.swaggerhub.com/apis-docs/alexfrenkel92/GammaTestApp/1.0.0#/
