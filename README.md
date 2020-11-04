@@ -11,7 +11,8 @@ git clone https://github.com/alexfrenkel92/gammaTestBackend.git
 
 2. Use npm to install the projetc's dependencies:
 ```sh
-npm install```
+npm install
+```
 
 3. To use the full app locally, you have to connect the clonned app to your MongoDB database, either with MongoDB Compass or MongoDB Atlas.
 
@@ -21,4 +22,5 @@ npm install```
 
 5. Run the app:
 ```sh
-npm run```
+npm run
+```
