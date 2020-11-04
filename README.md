@@ -34,3 +34,7 @@ npm run
 For a detailed API documentation, visit the link below:
 
 https://app.swaggerhub.com/apis-docs/alexfrenkel92/GammaTestApp/1.0.0#/
+
+## API Tests with Postman
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/ba53e7a3f26bb5aff220)
