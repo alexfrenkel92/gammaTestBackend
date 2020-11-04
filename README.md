@@ -4,7 +4,10 @@ GammaTest is a test app, written in NodeJs, using MongoDB Atlas.
 
 ## Installation
 
-1. Clone the repo: git clone https://github.com/alexfrenkel92/gammaTestBackend.git
+1. Clone the repo: 
+```sh
+git clone https://github.com/alexfrenkel92/gammaTestBackend.git
+```
 
 2. Use npm to install the projetc's dependencies: npm install
 
