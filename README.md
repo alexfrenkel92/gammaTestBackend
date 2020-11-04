@@ -1,4 +1,4 @@
-# GammaTest
+# GammaTest App
 
 GammaTest is a test app, written in NodeJs, using MongoDB Atlas.
 
