@@ -25,7 +25,7 @@ router.get('/:id?', (req, res) => {
 });
 
 router.post('/', (req, res) => {
-  const productId = req.body._id;
+  const productId = JSON.parse(req.body._id);
   const productName = req.body.productName;
   const productPrice = req.body.productPrice;
 
