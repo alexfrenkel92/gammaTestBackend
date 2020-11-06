@@ -7,6 +7,7 @@ router.get('/:id?', (req, res) => {
   const productId = req.params.id;
   getProducts(productId)
     .then((products) => {
+      console.log(products)
       if (products.length > 0) {
         products = products.map((product) => ({
           productId: product._id,
